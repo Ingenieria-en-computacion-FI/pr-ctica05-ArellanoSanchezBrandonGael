@@ -96,11 +96,8 @@ void lista_imprimir(Lista* lista)
 
 void lista_destruir(Lista* lista)
 {
-    /*
-    TODO:
-
-    1 si la lista no esta vacia
-    2 borrar el primero o el último 
-    3 hacer que lista apunte a nulo
-    */
+    
+    while ( != lista_cvacia(lista));
+    lista_eliminar_head(lista);
+ } free(lista);
 }
