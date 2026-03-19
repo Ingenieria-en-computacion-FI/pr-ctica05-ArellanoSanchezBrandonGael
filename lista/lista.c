@@ -20,29 +20,27 @@ int lista_vacia(Lista* lista)
 void lista_insertar_head(Lista* lista, int dato)
 {
 
-    lista *
+    
 
-    1 Crear nuevo nodo
-    2 Si lista está vacía:
-        head y tail apuntan al nuevo nodo
-    3 Si no:
-        head apunta al nuevo nodo
-        actualizar tail
-    */
+    Nodo *newNode = CrearNodo(e);
+    if(lista_vacia(lista)){
+    l -> head = newNode;
+    l -> tail = newNode;
+    } else if {
+    newNode -> siguiente = lista -> head;
+        lista -> head;
+        
 }
 
 void lista_insertar_tail(Lista* lista, int dato)
 {
-    /*
-    TODO:
-
-    1 Crear nuevo nodo
-    2 Si lista está vacía:
-        head y tail apuntan al nuevo nodo
-    3 Si no:
-        tail->siguiente apunta al nuevo nodo
-        actualizar tail
-    */
+   Nodo *newNode = CrearNodo(e);
+    if(lista_vacia(lista)){
+    l -> head = newNode;
+    l -> tail = newNode;
+    } else if {
+    lista -> tail ->suiguiente = newnode;
+        lista -> tail = newNode;
 }
 
 int lista_eliminar_head(Lista* lista){
@@ -77,22 +75,8 @@ if(lista -> head == lista tail){
 
     reutrn dato;
 }
-while
-    /*
-    TODO:
-
-    1 Si lista vacía regresar error
-    2 Si solo hay un nodo:
-        guardar dato
-        liberar nodo
-        head = NULL
-        tail = NULL
-    3 Si hay varios nodos:
-        recorrer lista hasta el nodo anterior al tail
-    4 actualizar tail
-    5 liberar nodo eliminado
-    6 regresar dato
-    */
+while(actual -> siguiente != lista -> tail){
+    actual -> actual -> siguiente
 
     return -1;
 }
