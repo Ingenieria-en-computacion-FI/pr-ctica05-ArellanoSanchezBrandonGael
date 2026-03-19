@@ -2,26 +2,17 @@
 
 Pila* pila_crear()
 {
-    /*
-    TODO
-    usar crear lista
-    */
+ crear_lista(lista);
 }
 
 int pila_vacia(Pila* pila)
 {
-    /*
-    TODO
-    usar lista_vacia
-    */
+    lista_vacia(lista);
 }
 
 void pila_push(Pila* pila, int dato)
 {
-    /*
-    TODO
-    usar lista_insertar_tail
-    */
+ ista_insertar_tail(pila
 }
 
 int pila_pop(Pila* pila)
