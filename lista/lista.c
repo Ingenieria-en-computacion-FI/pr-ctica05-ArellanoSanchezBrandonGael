@@ -5,13 +5,11 @@
 Lista* lista_crear()
 {
     
-    /*
-    TODO:
+    Lista* lista_crear();
+l (lista*)malloc(szeof(lista));
+l -> head = NULL;
+l -> tail= NULL;
 
-    1 Crear un apuntador a lista
-    2 Reswevar memoria para lista
-    3 Devolver la lista
-    */
 }
 
 int lista_vacia(Lista* lista)
@@ -21,8 +19,8 @@ int lista_vacia(Lista* lista)
 
 void lista_insertar_head(Lista* lista, int dato)
 {
-    /*
-    TODO:
+
+    lista *
 
     1 Crear nuevo nodo
     2 Si lista está vacía:
