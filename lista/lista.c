@@ -6,7 +6,7 @@ Lista* lista_crear()
 {
     
     Lista* lista_crear();
-l (lista*)malloc(szeof(lista));
+l =  (lista*)malloc(szeof(lista));
 l -> head = NULL;
 l -> tail= NULL;
 
@@ -14,7 +14,7 @@ l -> tail= NULL;
 
 int lista_vacia(Lista* lista)
 {
-    
+   return lista -> head == NULL; 
 }
 
 void lista_insertar_head(Lista* lista, int dato)
@@ -29,7 +29,7 @@ void lista_insertar_head(Lista* lista, int dato)
     } else if {
     newNode -> siguiente = lista -> head;
         lista -> head;
-        
+    }       
 }
 
 void lista_insertar_tail(Lista* lista, int dato)
@@ -44,14 +44,12 @@ void lista_insertar_tail(Lista* lista, int dato)
 }
 
 int lista_eliminar_head(Lista* lista){
-    if(lista_vacia(lista){
+    if(lista_vacia(lista)
         return -1;
-}
 Nodo* temp= lista->head;
 int dato = temp -> dato;
-}
+    }
    
-    return -1;
 }
 
 int lista_eliminar_tail(Lista* lista)
@@ -76,9 +74,14 @@ if(lista -> head == lista tail){
     reutrn dato;
 }
 while(actual -> siguiente != lista -> tail){
-    actual -> actual -> siguiente
+    actual -> actual -> siguiente;
+}
+    Nodo *temp = lista -> tail;
+    int dato = temp -> dato;
+    actual -> siguiente = NULL;
+    lista -> tail = actual;
 
-    return -1;
+    return dato;
 }
 
 void lista_imprimir(Lista* lista)
