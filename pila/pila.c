@@ -2,39 +2,32 @@
 
 Pila* pila_crear()
 {
- crear_lista(lista);
+ crear_lista(pila);
 }
 
 int pila_vacia(Pila* pila)
 {
-    lista_vacia(lista);
+    lista_vacia(pila);
 }
 
 void pila_push(Pila* pila, int dato)
 {
- ista_insertar_tail(pila
+ lista_insertar_tail(pila);
 }
 
 int pila_pop(Pila* pila)
-{
-    /*
-    TODO
-    usar lista_eliminar_tail
-    */
+
+ lista_eliminar_tail(pila);
     return -1;
 }
 
 int pila_top(Pila* pila)
 {
-    /*
-    TODO
-    regresar dato del tail
-    */
+    if (pila_vacia(pila))
     return -1;
 }
 
 void pila_destruir(Pila* pila)
 {
-    // TODO
-    // Usar lista destruir
+    lista_destruir(pila);
 }
